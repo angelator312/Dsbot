@@ -1,7 +1,7 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const { encode, decode } = require('./shipher3')
-const information = require('./INFORMATION.json');
+const information = JSON.parse(process.env.INFO);
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
