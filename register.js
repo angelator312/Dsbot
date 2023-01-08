@@ -1,6 +1,6 @@
 const { REST, Routes } = require('discord.js');
 const { SlashCommandBuilder } = require('discord.js');
-const information = require('./INFORMATION.json');
+const information = JSON.parse(process.env.INFO)
 const encode = new SlashCommandBuilder()
   .setName('encode')
   .setDescription('Шифрира!!')
