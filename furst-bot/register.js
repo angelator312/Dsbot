@@ -1,6 +1,6 @@
 const { REST, Routes } = require('discord.js');
 const { SlashCommandBuilder } = require('discord.js');
-const information = JSON.parse(process.env.INFO);
+const information = JSON.parse(process.env.INFO2);
 const data = new SlashCommandBuilder()
   .setName('number')
   .setDescription('Ymnojava chislata!')

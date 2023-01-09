@@ -1,7 +1,7 @@
 const { Client, GatewayIntentBits } = require('discord.js');
 const { ActionRowBuilder, ButtonBuilder, ButtonStyle } = require('discord.js');
 const { encode, decode } = require('./shipher3')
-const information = JSON.parse(process.env.INFO);
+const information = JSON.parse(process.env.INFO2);
 const vicove = require('./vicove.json');
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 // resolve=разрешавам reject=error
