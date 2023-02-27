@@ -34,7 +34,7 @@ client.on('guildMemberAdd', member => {
     console.log(member.user.username);
     const channel = client.channels.cache.find((channel) => channel.name == 'verifieds');
     channel.send('New member: ' + member.user.username);
-    member.send('Hello member: ' + member.user.username)
+    member.send('Hello member: ' + member.user.username);
 });
 
 client.login(information.TOKEN)
