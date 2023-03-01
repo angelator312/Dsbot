@@ -26,6 +26,10 @@ function start_web(client) {
       console.log(member);
       await member.roles.add(role);
       res.redirect("https://discord.gg/SuMX2Gjr3G/");
+    }else
+    {
+      res.writeHead(404);
+      res.write('<a href=https://discord.gg/SuMX2Gjr3G/> No verify permissions for discord server <strong> angelator312 public bot server<strong> </a> ');
     }
   });
   app.listen(port, () => {
