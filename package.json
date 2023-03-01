@@ -1,7 +1,12 @@
 {
   "dependencies": {
-    "discord.js": "^14.6.0",
-    "nodemon": "^2.0.20"
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^4.11.0",
+    "nodemon": "^2.0.20",
+    "uuid": "^9.0.0"
   },
   "name": "discord-bot",
   "version": "1.0.0",
@@ -9,7 +14,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run registry && nodemon ./index.js && node furst-bot/register.js && nodemon furst-bot/index.js",
-    "registry" : "node ./register.js"
+    "registry": "node ./register.js"
   },
   "author": "",
   "license": "ISC",
