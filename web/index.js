@@ -15,7 +15,7 @@ function start_web(client) {
   // край на конфигурациите
   app.get("/verify/:url", async function (req, res) {
     const url = req.params.url;
-    const m = await session.getkey(url);
+    const m = await session.getKey(url);
     console.log(m);
     if (m) {
       const mid = m.mid;
@@ -25,6 +25,7 @@ function start_web(client) {
       const member = await guild.members.fetch(mid);
       console.log(member);
       await member.roles.add(role);
+      await session.deleteKey(url);
       res.redirect("https://discord.gg/SuMX2Gjr3G/");
     }else
     {

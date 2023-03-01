@@ -51,7 +51,7 @@ client.on('guildMemberAdd', async member => {
     console.log(member.user.username);
     const channel = client.channels.cache.find((channel) => channel.name == 'verifieds');
     channel.send('New member: ' + member.user.username);
-    await session.addkey(uuid, {url:uuid,mid:member.id,gid:member.guild.id});
+    await session.addKey(uuid, {url:uuid,mid:member.id,gid:member.guild.id});
     member.send('Hello member: ' + member.user.username + ". Url for verify: http://dsbot.angelator312.top/verify/"+uuid);
 });
 
